@@ -7,3 +7,4 @@ openai==1.76.2
 llama-index==0.12.33
 llama-index-core==0.12.33.post1
 llama-index-llms-openai==0.3.38
+gunicorn
