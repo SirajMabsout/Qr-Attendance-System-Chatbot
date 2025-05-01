@@ -18,7 +18,7 @@ DB_PASSWORD = os.getenv("DB_PASSWORD")
 DB_HOST = os.getenv("DB_HOST")
 DB_NAME = os.getenv("DB_NAME")
 DB_PORT = os.getenv("DB_PORT", "3306")
-SSL_CERT_PATH = os.getenv("SSL_CERT_PATH", "/home/site/wwwroot/certs/azure-cert.pem")
+
 
 
 
@@ -28,7 +28,7 @@ openai.api_key = OPENAI_API_KEY
 # === SQLAlchemy Engine + LlamaIndex Adapter ===
 engine = create_engine(
     f"mysql+pymysql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}",
-    connect_args={"ssl_ca": SSL_CERT_PATH}
+    connect_args={"ssl": {"ca": "/etc/ssl/certs/ca-certificates.crt"}}
 )
 sql_db = SQLDatabase(engine)
 
