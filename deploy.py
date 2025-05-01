@@ -18,7 +18,8 @@ DB_PASSWORD = os.getenv("DB_PASSWORD")
 DB_HOST = os.getenv("DB_HOST")
 DB_NAME = os.getenv("DB_NAME")
 DB_PORT = os.getenv("DB_PORT", "3306")
-SSL_CERT_PATH = os.getenv("SSL_CERT_PATH", "/home/site/wwwroot/azure-cert.pem")
+SSL_CERT_PATH = os.getenv("SSL_CERT_PATH", "/home/site/wwwroot/certs/azure-cert.pem")
+
 
 
 # === Initialize API keys ===
