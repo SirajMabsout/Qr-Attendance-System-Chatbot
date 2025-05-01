@@ -75,9 +75,10 @@ Teachers can access:
 - Attendance of students in their classes
 - Join and attendance requests
 - QR codes for their classes
+- Students Attendance Stats of presence absences remaining absences ..etc
 
 They are forbidden from:
-- Other teachers' or students' data
+- Other teachers' or students not in taught classes' data
 - Admin-level stats
 
 ---
