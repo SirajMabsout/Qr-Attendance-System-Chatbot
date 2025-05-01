@@ -1,0 +1,9 @@
+fastapi==0.115.12
+uvicorn==0.34.2
+sqlalchemy
+pymysql
+python-dotenv==1.1.0
+openai==1.76.2
+llama-index==0.12.33
+llama-index-core==0.12.33.post1
+llama-index-llms-openai==0.3.38
